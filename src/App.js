@@ -2,6 +2,16 @@ import axios from 'axios';
 import React, {useState, useEffect} from 'react'
 import { Button, Form, Table } from 'semantic-ui-react'
 import env from "react-dotenv";
+import Main from './components/Main'
+
+
+
+
+
+
+
+
+
 const App = () => {
 const [data,setData]=useState([]);
 const [firstname,setFirtsname]=useState("");
@@ -49,6 +59,9 @@ const onSubmit= async(e)=>{
 
   return(
     <div>
+
+<Main/>
+
 <h1 style={{padding:'5% 20% 1% 20%', textAlign:'center'}}>ORDER FORM</h1>
           <Form style={{padding:'1% 20%'}}>
     <Form.Field>
